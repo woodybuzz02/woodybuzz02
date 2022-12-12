@@ -13,7 +13,55 @@
 
 
 ```java
+public class Developer {
+	
+	public String[] code;
+	public String[] tools;
+	public String email;
+	public String blog;
+	public String bio;
+	
+	public Developer(String[] code, String[] tools, String email, String blog, String bio) {
+		this.code = code;
+		this.tools = tools;
+		this.email = email;
+		this.blog = blog;
+		this.bio = bio;
+	}
+	
+	public void introduceDeveloper() {
+		
+		System.out.println("========================================");
+		System.out.println("bio : " + bio);
+		System.out.println("code : " + Arrays.toString(code));
+		System.out.println("tools : " + Arrays.toString(tools));
+		System.out.println("email : " + email);
+		System.out.println("blog : " + blog);
+		System.out.println("========================================");
+		
+	}		
+}
 
+public class main {
+
+	public static void main(String[] args) {
+     
+		String[] code = {"Java", "JavaScript", "jQuery","HTML5", "CSS3", "Spring",
+				"SpringBoot", "MySQL", "MariaDB"};
+		String[] tools = {"EclipseIDE", "IntelliJ", "VisualStudioCode","ApacheTomcat", 
+				"Figma", "GitHub", "AWS"};
+		String email = "ajdanddl6321@gmail.com";
+		String blog = "https://velog.io/@woodybuzz";
+		String bio = "안녕하세요! 현재 자바 백엔드 개발자가 되기 위해 열심히 공부하고 있습니다.";
+		
+		Developer yewon = new Developer(code, tools, email, blog, bio);
+		
+		yewon.introduceDeveloper();
+     
+	}
+
+}     
+     
 ```
 </div> 
 </div> 
