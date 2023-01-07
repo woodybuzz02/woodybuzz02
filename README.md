@@ -76,10 +76,12 @@ public class main {
 
 	public static void main(String[] args) {
      
-		String[] skills = {"Java", "JavaScript", "jQuery","HTML5", "CSS3", "SpringBoot", "MySQL", "MariaDB", "GitHub", "AWS"};;
+		String[] skills = {"Java", "JavaScript", "jQuery","HTML5", "CSS3", 
+	  			   "SpringBoot", "MySQL", "MariaDB", "GitHub", "AWS"};
 		String email = "ajdanddl6321@gmail.com";
 		String blog = "https://velog.io/@woodybuzz";
-		String bio = "어제보다 더 나은 개발자가 되고 싶은 마음가짐으로 학습하는 것을 생활화하고 있으며, 노션을 통하여 학습한 내용을 정리하고 있습니다.";
+		String bio = "어제보다 더 나은 개발자가 되고 싶은 마음가짐으로 학습하는 것을 생활화하고 있으며,
+	                      노션을 통하여 학습한 내용을 정리하고 있습니다.";
 		
 		Developer yewon = new Developer(code, tools, email, blog, bio);
 		
